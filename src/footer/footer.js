@@ -9,13 +9,13 @@ function Footer() {
 
   return (
 
-    <Navbar className="justify-content-between" fixed="bottom" expand="lg" variant="dark" style={{background: "black"}}>
+    <Navbar className="justify-content-between" sticky="bottom" expand="lg" variant="dark" style={{background: "black"}}>
 
           <Navbar.Text style={{margin: "10px"}}>
           &#169; Copyright 2020
           </Navbar.Text>
 
-          <Navbar.Text style={{margin: "10px"}}>
+          <Navbar.Text style={{margin: "10px"},{color: "white"}}>
           Designed & Developed By <b>Mayuresh Kutte</b>
           </Navbar.Text>
 

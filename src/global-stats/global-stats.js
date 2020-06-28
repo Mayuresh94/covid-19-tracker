@@ -32,7 +32,7 @@ function GlobalStats () {
         <Container fluid style={{background:"#F4D03F"}}>
         <div className="row">
         <div className="col-sm-12">
-          <h1 style={{fontSize: 60, textAlign: "center", }}><NumberFormat value={latest.cases} displayType={'text'} thousandSeparator={true}/> *</h1>
+          <h1 style={{fontSize: 60, textAlign: "center", marginTop: "5px" }}><NumberFormat value={latest.cases} displayType={'text'} thousandSeparator={true}/>*</h1>
           <small>* COVID-19 Positive Cases Recorded Worldwide Until :<b> {lastUpdated}</b></small>
         </div>
         </div>
