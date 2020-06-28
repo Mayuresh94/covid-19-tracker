@@ -45,6 +45,10 @@ const countries = filterCountries.map((data, index) => {
         <Card.Text><b>Cases</b>      : {data.cases}</Card.Text>
         <Card.Text><b>Deaths</b>     : {data.deaths}</Card.Text>
         <Card.Text><b>Recovered</b>  : {data.recovered}</Card.Text>
+        <Card.Text><b>Tests</b>  : {data.tests}</Card.Text>
+        <Card.Text><b>Active</b>  : {data.active}</Card.Text>
+        <Card.Text style={{color: "red"}}><b>Critical</b>  : {data.critical}</Card.Text>
+        <Card.Text><b><i>Cases Per Million : {data.casesPerOneMillion}</i></b></Card.Text>
         </Card.Body>
     </Card>
     </div>
@@ -67,7 +71,7 @@ var queries = [{
       <div className="col-sm-6">
         <Form>
           <Form.Group controlId="formSearch">
-            <Form.Label><b>For Statistics Of Specific Countries Search Below </b></Form.Label>
+            <Form.Label><b>Search Country Below</b></Form.Label>
             <Form.Control type="text" placeholder="Start typing country name..."
             onChange={e => setSearchCountries(e.target.value)}
             onInput={toInputLowercase}/>
