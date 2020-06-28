@@ -15,7 +15,7 @@ function Footer() {
           &#169; Copyright 2020
           </Navbar.Text>
 
-          <Navbar.Text style={{margin: "10px"},{color: "white"}}>
+          <Navbar.Text style={{margin: "10px", color: "white"}}>
           Designed & Developed By <b>Mayuresh Kutte</b>
           </Navbar.Text>
 
