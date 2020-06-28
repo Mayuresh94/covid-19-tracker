@@ -67,8 +67,8 @@ var queries = [{
       <div className="col-sm-6">
         <Form>
           <Form.Group controlId="formSearch">
-            <Form.Label><b>Search For Country Specific Details </b></Form.Label>
-            <Form.Control type="text" placeholder="Start typing country name for suggestions..."
+            <Form.Label><b>For Statistics Of Specific Countries Search Below </b></Form.Label>
+            <Form.Control type="text" placeholder="Start typing country name..."
             onChange={e => setSearchCountries(e.target.value)}
             onInput={toInputLowercase}/>
           </Form.Group>
