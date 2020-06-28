@@ -20,7 +20,7 @@ function App() {
     <GlobalStats/>
     <CountrySpecificStats/>
     <Container fluid>
-    <div className="row" style={{height: "50vh"}}>
+    <div className="row" style={{height: "40vh"}}>
     <div className="col-sm-12"></div>
     </div>
     </Container>
