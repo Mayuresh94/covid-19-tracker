@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Columns from 'react-columns';
 import Form from 'react-bootstrap/Form'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Moment from 'react-moment';
 import axios from "axios";
 
 
@@ -13,7 +14,12 @@ function CountrySpecificStats()  {
 
   useEffect(() => {
 
-      axios.get("https://disease.sh/v2/countries")
+      axios.get("https://disease.sh/v2/countries",
+    {
+      headers: {
+        "cache-control": "no-cache, no-store, max-age=0"
+      }
+    })
     .then(response => {
       setResults(response.data);
     })
@@ -26,15 +32,22 @@ const toInputLowercase = e => {
   e.target.value = ("" + e.target.value).toLowerCase();
 }
 
+
+
 const filterCountries = results.filter(item => {
   return searchCountries === "" ? "" : item.country.toLowerCase().includes(searchCountries);
 })
 
 const countries = filterCountries.map((data, index) => {
+  const date = new Date(parseInt(data.updated));
+  // const lastUpdated = date.toString();
+
+
   return (
     <div>
     <Card
       key={index}
+      border="secondary"
       bg="light"
       text="dark"
       className="text-center"
@@ -50,6 +63,9 @@ const countries = filterCountries.map((data, index) => {
         <Card.Text style={{color: "red"}}><b>Critical</b>  : {data.critical}</Card.Text>
         <Card.Text><b><i>Cases Per Million : {data.casesPerOneMillion}</i></b></Card.Text>
         </Card.Body>
+        <Card.Footer>
+        <small className="text-muted">Last updated <Moment fromNow>{date}</Moment></small>
+        </Card.Footer>
     </Card>
     </div>
   )

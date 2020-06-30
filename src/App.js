@@ -15,12 +15,12 @@ function App() {
 
   return (
 
-    <div className="App" style={mystyle} >
+    <div className="App" style={{background:"#e6f2ff"}} >
 
     <GlobalStats/>
     <CountrySpecificStats/>
     <Container fluid>
-    <div className="row" style={{height: "40vh"}}>
+    <div className="row" style={{height: "32.5vh"}}>
     <div className="col-sm-12"></div>
     </div>
     </Container>
