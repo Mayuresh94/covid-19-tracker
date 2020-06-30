@@ -5,11 +5,6 @@ import CountrySpecificStats from './country-specific-stats/country-specific-stat
 import Footer from './footer/footer'
 import Container from 'react-bootstrap/Container'
 
-const mystyle={
-  background: 'linear-gradient(to right, #833ab4, #fcb045)',
-  height: 'auto',
-}
-
 function App() {
 
 
