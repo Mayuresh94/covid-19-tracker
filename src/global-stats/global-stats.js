@@ -51,7 +51,7 @@ useEffect(() => {
             </Card.Text>
           </Card.Body>
           <Card.Footer>
-            <small> 🕘 Updated <Moment fromNow>{date}</Moment></small>
+            <small> <span role="img" aria-label="clock">🕘</span> Updated <Moment fromNow>{date}</Moment></small>
           </Card.Footer>
         </Card>
         <Card bg="danger" text="white">
@@ -62,7 +62,7 @@ useEffect(() => {
             </Card.Text>
             </Card.Body>
             <Card.Footer>
-              <small> 🕘 Updated <Moment fromNow>{date}</Moment></small>
+              <small> <span role="img" aria-label="clock">🕘</span> Updated <Moment fromNow>{date}</Moment></small>
             </Card.Footer>
         </Card>
         <Card bg="success" text="white">
@@ -73,7 +73,7 @@ useEffect(() => {
             </Card.Text>
           </Card.Body>
           <Card.Footer>
-            <small> 🕘 Updated <Moment fromNow>{date}</Moment></small>
+            <small> <span role="img" aria-label="clock">🕘</span> Updated <Moment fromNow>{date}</Moment></small>
           </Card.Footer>
         </Card>
       <Card bg="secondary" text="white">
@@ -84,7 +84,7 @@ useEffect(() => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small> 🕘 Updated <Moment fromNow>{date}</Moment></small>
+          <small> <span role="img" aria-label="clock">🕘</span> Updated <Moment fromNow>{date}</Moment></small>
         </Card.Footer>
       </Card>
     </CardDeck>
