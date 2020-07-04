@@ -10,14 +10,17 @@ function Footer() {
   return (
 
     <Navbar className="justify-content-between" sticky="bottom" expand="lg" variant="dark" style={{background: "black"}}>
+          <Navbar.Text style={{margin: "10px", color: "white"}}>
+          Designed & Developed By <b>Mayuresh Kutte</b>
+          <br/>
+          #StayHome #StaySafe
+          </Navbar.Text>
 
           <Navbar.Text style={{margin: "10px"}}>
           &#169; Copyright 2020
           </Navbar.Text>
 
-          <Navbar.Text style={{margin: "10px", color: "white"}}>
-          Designed & Developed By <b>Mayuresh Kutte</b>
-          </Navbar.Text>
+
 
           <div className="mr-sm-4" style={{margin: "5px"}}>
           <a href="https://www.linkedin.com/in/mayuresh-kutte-13a301a5/" target="_blank" rel="noopener noreferrer">
