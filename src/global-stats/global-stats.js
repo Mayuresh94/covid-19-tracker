@@ -44,7 +44,7 @@ useEffect(() => {
         <Navbar bg="dark" variant="dark">
         <Navbar.Brand href="#home">COVID-19 Live Status</Navbar.Brand>
         <Nav className="mr-auto">
-        <Nav.Link href="/map">Map View</Nav.Link>
+        <Nav.Link to="/map">Map View</Nav.Link>
         </Nav>
         </Navbar>
 
