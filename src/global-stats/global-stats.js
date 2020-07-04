@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
-import Container from 'react-bootstrap/Container'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NumberFormat from 'react-number-format';
 import axios from "axios";
@@ -9,8 +8,6 @@ import './global-stats.css'
 import '../Fonts/Calistoga-Regular.ttf'
 import Moment from 'react-moment';
 import ClipLoader from "react-spinners/ClipLoader";
-import '../App.css'
-import {Link} from "react-router-dom";
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 

@@ -1,7 +1,4 @@
 import React from 'react';
-import Iframe from 'react-iframe'
-import '../App.css'
-import {Link} from "react-router-dom";
 import './map.css'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
@@ -18,7 +15,7 @@ function Map() {
     </Navbar>
 
     <div className="google-map-code" >
-          <iframe src="https://maps.mapmyindia.com/corona" width="1360" height="590" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe title="map" src="https://maps.mapmyindia.com/corona" width="1360" height="590" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
         </div>
 
