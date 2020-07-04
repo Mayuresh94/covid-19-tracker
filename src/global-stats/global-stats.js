@@ -10,6 +10,7 @@ import Moment from 'react-moment';
 import ClipLoader from "react-spinners/ClipLoader";
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
+import { Link } from "react-router-dom";
 
 function GlobalStats () {
 
@@ -44,7 +45,9 @@ useEffect(() => {
         <Navbar bg="dark" variant="dark">
         <Navbar.Brand href="#home">COVID-19 Live Status</Navbar.Brand>
         <Nav className="mr-auto">
-        <Nav.Link to="#/map">Map View</Nav.Link>
+        <Link style={{ color:"white", textDecoration: "none"}} to="/map">
+       <div>Map View</div>
+       </Link>
         </Nav>
         </Navbar>
 
