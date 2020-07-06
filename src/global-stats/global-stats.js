@@ -62,7 +62,7 @@ useEffect(() => {
             <Card.Text>
             <ClipLoader
                      size={25}
-                     color={"black"}
+                     color={"white"}
                      loading={loading}
                    />
             <NumberFormat value={latest.active} displayType={'text'} thousandSeparator={true}/>
