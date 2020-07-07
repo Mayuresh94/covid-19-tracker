@@ -9,7 +9,7 @@ function Header() {
     <Navbar.Brand href="#home">COVID-19 Live Status</Navbar.Brand>
     <Nav className="mr-auto">
     <Link style={{ color:"white", textDecoration: "none"}} to="/map">
-   <div style={{fontSize: 20, marginLeft: "15px" }}><span role="img" aria-label="map" >🌏</span> Map View</div>
+   <div style={{fontSize: 20, marginLeft: "15px" }}><span role="img" aria-label="map" >🌏</span> Map</div>
    </Link>
     </Nav>
     </Navbar>

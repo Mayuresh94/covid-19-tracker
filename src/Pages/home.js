@@ -12,7 +12,7 @@ function Home() {
 
   return (
 
-    <div className="App" style={{background : "#5CDB95"}} >
+    <div className="App" style={{background : "#D7CEC7"}} >
     <Header/>
     <GlobalStats/>
     <CountrySpecificStats/>

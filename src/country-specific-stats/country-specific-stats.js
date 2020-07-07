@@ -5,12 +5,14 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import filterFactory, { textFilter } from 'react-bootstrap-table2-filter';
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import paginationFactory from 'react-bootstrap-table2-paginator';
+import ClipLoader from "react-spinners/ClipLoader";
 
 
 
 function CountrySpecificStats()  {
 
   const [results, setResults] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
 
@@ -22,6 +24,7 @@ function CountrySpecificStats()  {
     })
     .then(response => {
       setResults(response.data);
+      setLoading(false)
     })
     .catch((err) => {
       console.log(err);
@@ -57,7 +60,7 @@ const stats = countryStats();
   filter: textFilter(),
   headerStyle: (column, colIndex) => {
      return {
-       backgroundColor: '#101820FF', color:"#ADEFD1FF"
+       backgroundColor: '#101820FF', color:"white"
      };
    }
 },
@@ -67,7 +70,7 @@ const stats = countryStats();
   sort: true,
   headerStyle: (column, colIndex) => {
      return {
-       backgroundColor: '#101820FF', color:"#ADEFD1FF"
+       backgroundColor: '#101820FF', color:"white"
      };
    }
 },
@@ -77,7 +80,7 @@ text: 'Deaths',
 sort: true,
 headerStyle: (column, colIndex) => {
    return {
-     backgroundColor: '#101820FF', color:"#ADEFD1FF"
+     backgroundColor: '#101820FF', color:"white"
    };
  }
 },
@@ -87,27 +90,7 @@ text: 'Recovered',
 sort: true,
 headerStyle: (column, colIndex) => {
    return {
-     backgroundColor: '#101820FF', color:"#ADEFD1FF"
-   };
- }
-},
-{
-dataField: 'critical',
-text: 'Critical',
-sort: true,
-headerStyle: (column, colIndex) => {
-   return {
-     backgroundColor: '#101820FF', color:"#ADEFD1FF"
-   };
- }
-},
-{
-dataField: 'casesPerOneMillion',
-text: 'Cases Per Million',
-sort: true,
-headerStyle: (column, colIndex) => {
-   return {
-     backgroundColor: '#101820FF', color:"#ADEFD1FF"
+     backgroundColor: '#101820FF', color:"white"
    };
  }
 }
@@ -122,7 +105,7 @@ const defaultSorted = [{
 
     <div className="row">
     <div className="col"></div>
-    <div className="col-sm-10" style={{fontSize:14}}>
+    <div className="col-sm-10" style={{fontSize:14, margin:"10px"}}>
 
     <BootstrapTable bootstrap4
                     striped
@@ -134,9 +117,18 @@ const defaultSorted = [{
                     filter={ filterFactory() }
                      defaultSorted={ defaultSorted }
                      pagination={ paginationFactory() }
-                     rowStyle={{ height: '16px', color:"#00203FFF", backgroundColor: '#379683'}}
+                     rowStyle={{ height: '16px', color:"white", backgroundColor: '#565656'}}
 
-    />
+    ></BootstrapTable>
+
+  <div className="d-flex justify-content-center table"><ClipLoader
+           size={300}
+           color={"black"}
+           loading={loading}
+           justify-content-center
+         />
+</div>
+
     </div>
     <div className="col"></div>
     </div>

@@ -1,3 +1,8 @@
+.holds-the-iframe {
+  background:url(./Loading_icon.gif) center center no-repeat;
+}
+
+
 @media screen and (max-width: 680px) {
   Iframe {
     position: relative;

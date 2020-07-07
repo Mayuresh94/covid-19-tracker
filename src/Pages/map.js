@@ -15,7 +15,7 @@ function Map() {
     </Nav>
     </Navbar>
 
-    <div className="google-map-code" >
+    <div className="google-map-code holds-the-iframe" >
           <iframe title="map" src="https://maps.mapmyindia.com/corona" width="1360" height="590" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0">
 
           </iframe>
