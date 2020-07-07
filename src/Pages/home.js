@@ -16,6 +16,9 @@ function Home() {
     <Header/>
     <GlobalStats/>
     <CountrySpecificStats/>
+    <div className="row" style={{height:"25vh"}}>
+    <div className="col-sm-12"></div>
+    </div>
     <Footer/>
     </div>
   );
