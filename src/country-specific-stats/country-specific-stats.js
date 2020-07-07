@@ -8,7 +8,6 @@ import paginationFactory from 'react-bootstrap-table2-paginator';
 import ClipLoader from "react-spinners/ClipLoader";
 
 
-
 function CountrySpecificStats()  {
 
   const [results, setResults] = useState([]);
@@ -46,8 +45,6 @@ const countryStats = data => {
   }
   return items;
 };
-
-
 
 const stats = countryStats();
 
@@ -106,7 +103,6 @@ const defaultSorted = [{
     <div className="row">
     <div className="col"></div>
     <div className="col-sm-10" style={{fontSize:14, margin:"10px"}}>
-
     <BootstrapTable bootstrap4
                     striped
                     bordered

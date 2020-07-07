@@ -9,7 +9,7 @@ function Map() {
   return (
     <div>
     <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#home">COVID-19 Live Status</Navbar.Brand>
+    <Navbar.Brand href="#home">COVID-19 Tracker</Navbar.Brand>
     <Nav className="mr-auto">
     <Nav.Link href="/">Home</Nav.Link>
     </Nav>

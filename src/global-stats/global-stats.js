@@ -52,9 +52,6 @@ useEffect(() => {
           <NumberFormat value={latest.cases} displayType={'text'} thousandSeparator={true}/>
           </Card.Text>
         </Card.Body>
-        <Card.Footer>
-          <small> <span role="img" aria-label="clock">🕘</span> Updated <Moment fromNow>{date}</Moment></small>
-        </Card.Footer>
       </Card>
         <Card bg="primary" text="white" >
           <Card.Body>
@@ -68,9 +65,6 @@ useEffect(() => {
             <NumberFormat value={latest.active} displayType={'text'} thousandSeparator={true}/>
             </Card.Text>
           </Card.Body>
-          <Card.Footer>
-            <small> <span role="img" aria-label="clock">🕘</span> Updated <Moment fromNow>{date}</Moment></small>
-          </Card.Footer>
         </Card>
         <Card bg="danger" text="white">
           <Card.Body className="text-center">
@@ -84,9 +78,6 @@ useEffect(() => {
             <NumberFormat value={latest.deaths} displayType={'text'} thousandSeparator={true}/>
             </Card.Text>
             </Card.Body>
-            <Card.Footer>
-              <small> <span role="img" aria-label="clock">🕘</span> Updated <Moment fromNow>{date}</Moment></small>
-            </Card.Footer>
         </Card>
         <Card bg="success" text="white">
           <Card.Body className="text-center">
@@ -100,12 +91,11 @@ useEffect(() => {
             <NumberFormat value={latest.recovered} displayType={'text'} thousandSeparator={true}/>
             </Card.Text>
           </Card.Body>
-          <Card.Footer>
-            <small> <span role="img" aria-label="clock">🕘</span> Updated <Moment fromNow>{date}</Moment></small>
-          </Card.Footer>
         </Card>
     </CardDeck>
-
+<div style={{marginLeft:"22px", fontSize:"3"}}>
+<h6><span role="img" aria-label="clock">🕘</span> <i>Statistics On This Site Were Updated <Moment fromNow>{date}</Moment></i></h6>
+</div>
 </div>
     )
 
