@@ -57,7 +57,7 @@ const stats = countryStats();
   filter: textFilter(),
   headerStyle: (column, colIndex) => {
      return {
-       backgroundColor: '#101820FF', color:"white"
+       backgroundColor: "black", color:"white"
      };
    }
 },
@@ -67,7 +67,7 @@ const stats = countryStats();
   sort: true,
   headerStyle: (column, colIndex) => {
      return {
-       backgroundColor: '#101820FF', color:"white"
+       backgroundColor: "black", color:"white"
      };
    }
 },
@@ -77,7 +77,7 @@ text: 'Deaths',
 sort: true,
 headerStyle: (column, colIndex) => {
    return {
-     backgroundColor: '#101820FF', color:"white"
+     backgroundColor: "black", color:"white"
    };
  }
 },
@@ -87,7 +87,7 @@ text: 'Recovered',
 sort: true,
 headerStyle: (column, colIndex) => {
    return {
-     backgroundColor: '#101820FF', color:"white"
+     backgroundColor: "black", color:"white"
    };
  }
 }
@@ -99,11 +99,12 @@ const defaultSorted = [{
 }];
 
   return (
-
+    <div className="container">
     <div className="row">
     <div className="col"></div>
-    <div className="col-sm-10" style={{fontSize:14, margin:"10px"}}>
-    <BootstrapTable bootstrap4
+    <div className="col-sm-10">
+    <BootstrapTable style={{fontSize:14}}
+    bootstrap4
                     striped
                     bordered
                     hover
@@ -124,10 +125,10 @@ const defaultSorted = [{
            justify-content-center
          />
 </div>
-
-    </div>
-    <div className="col"></div>
-    </div>
+</div>
+<div className="col"></div>
+</div>
+</div>
 
 
 

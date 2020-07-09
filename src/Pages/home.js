@@ -16,8 +16,16 @@ function Home() {
     <Header/>
     <GlobalStats/>
     <CountrySpecificStats/>
-    <div className="row" style={{height:"25vh"}}>
-    <div className="col-sm-12"></div>
+    <div className="container">
+    <div className="row">
+    <div className="col-sm-3"></div>
+    <div className="col-sm-6" style={{textAlign:"center", margin:"25px"}}>
+    <h6>visitor counter</h6>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7540521&style=0006&nbdigits=6&type=page&initCount=0" title="Web Counter" Alt="counter free"   border="0" >
+    </img>
+    </div>
+    <div className="col-sm-3"></div>
+    </div>
     </div>
     <Footer/>
     </div>

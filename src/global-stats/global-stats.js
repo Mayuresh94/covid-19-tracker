@@ -7,6 +7,7 @@ import axios from "axios";
 import './global-stats.css'
 import Moment from 'react-moment';
 import ClipLoader from "react-spinners/ClipLoader";
+import ReactGA from 'react-ga';
 
 function GlobalStats () {
 
@@ -15,6 +16,10 @@ function GlobalStats () {
 
 
 useEffect(() => {
+  ReactGA.initialize('UA-172148173-1');
+  ReactGA.pageview("/");
+  ReactGA.pageview("/map");
+
       axios.get("https://disease.sh/v2/all/",
     {
       headers: {

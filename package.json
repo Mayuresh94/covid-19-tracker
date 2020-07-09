@@ -19,6 +19,8 @@
     "react-bootstrap-table2-paginator": "^2.1.2",
     "react-columns": "^1.2.1",
     "react-dom": "^16.13.1",
+    "react-ga": "^3.1.2",
+    "react-hook-geolocation": "^1.0.6",
     "react-iframe": "^1.8.0",
     "react-moment": "^0.9.7",
     "react-number-format": "^4.4.1",
