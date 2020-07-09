@@ -40,7 +40,7 @@ function Map() {
     </Navbar>
     <div className="google-map-code holds-the-iframe" >
 
-          <iframe title="map" src="https://www.bing.com/covid" width="1360" height="590" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0">
+          <iframe title="map" src="https://www.bing.com/covid" width="100%" height="675px" frameborder="0" style={{border:0}} allowfullscreen="" aria-hidden="false" tabindex="0">
           {ComponentWithGeolocation}
           </iframe>
         </div>
